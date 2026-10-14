@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreatorStudio - Quản lý người dùng</title>
+    <link rel="stylesheet" href="gk.css" />
+  </head>
+  <body>
+    <header class="dau-trang">
+      <div class="dau-trang-trai">
+        <div class="khung-logo">C</div>
+        <span class="ten-thuong-hieu">CreatorStudio</span>
+        <button class="nut-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+      </div>
+      <div class="dau-trang-phai">
+        <span class="nhan-vai-tro">Quản trị viên</span>
+        <span class="ten-nguoi-dung">Quản trị viên</span>
+        <button class="nut-dang-xuat">Đăng xuất</button>
+      </div>
+    </header>
+
+    <div class="khung-chinh">
+      <aside class="thanh-ben">
+        <div class="tieu-de-thanh-ben">QUẢN TRỊ VIÊN</div>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-puzzle-piece"></i> Template brief</a
+            >
+          </li>
+          <li class="dang-chon">
+            <a href="#"><i class="fa-solid fa-user-group"></i> Người dùng</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Cài đặt dự án</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="noi-dung">
+        <div class="noi-dung-header">
+          <div>
+            <h1>Người dùng</h1>
+            <p>Tạo tài khoản, đổi vai trò và vô hiệu hóa người dùng.</p>
+          </div>
+          <button class="nut-them" id="moModalBtn">
+            <i class="fa-solid fa-plus"></i> Thêm người dùng
+          </button>
+        </div>
+
+        <div class="thanh-loc">
+          <div class="khung-tim-kiem">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="oTimKiem"
+              placeholder="Tìm theo tên hoặc email..."
+            />
+          </div>
+          <select id="locVaiTro">
+            <option value="">Tất cả vai trò</option>
+            <option value="Khách hàng">Khách hàng</option>
+            <option value="Nhà thiết kế">Nhà thiết kế</option>
+            <option value="Creative Lead">Creative Lead</option>
+            <option value="Quản trị viên">Quản trị viên</option>
+          </select>
+          <select id="locTrangThai">
+            <option value="">Mọi trạng thái</option>
+            <option value="Đang chạy">Đang chạy</option>
+            <option value="Vô hiệu hóa">Vô hiệu hóa</option>
+          </select>
+        </div>
+
+        <div class="khung-bang">
+          <table>
+            <thead>
+              <tr>
+                <th>HỌ TÊN</th>
+                <th>EMAIL</th>
+                <th>VAI TRÒ</th>
+                <th>TRẠNG THÁI</th>
+                <th>THAO TÁC</th>
+              </tr>
+            </thead>
+            <tbody id="bangNguoiDung"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <div class="nen-modal" id="modalNguoiDung">
+      <div class="noi-dung-modal">
+        <h2 id="tieuDeModal">Thêm người dùng</h2>
+        <form id="formNguoiDung">
+          <input type="hidden" id="maNguoiDung" />
+          <div class="nhom-form">
+            <label>Họ tên *</label>
+            <input
+              type="text"
+              id="nhapHoTen"
+              required
+              placeholder="Nhập họ tên..."
+            />
+          </div>
+          <div class="nhom-form">
+            <label>Email *</label>
+            <input
+              type="email"
+              id="nhapEmail"
+              required
+              placeholder="Nhập email..."
+            />
+          </div>
+          <div class="nhom-form">
+            <label>Vai trò *</label>
+            <select id="nhapVaiTro" required>
+              <option value="">— Chọn —</option>
+              <option value="Khách hàng">Khách hàng</option>
+              <option value="Nhà thiết kế">Nhà thiết kế</option>
+              <option value="Creative Lead">Creative Lead</option>
+              <option value="Quản trị viên">Quản trị viên</option>
+            </select>
+          </div>
+          <div class="hanh-dong-modal">
+            <button type="button" class="nut-huy" id="dongModalBtn">Hủy</button>
+            <button type="submit" class="nut-luu">Lưu</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="gk.js"></script>
+  </body>
+</html>
