@@ -42,7 +42,7 @@ Trang **Bảng điều khiển** được thiết kế dành cho nhà thiết k�
 ---
 
 ## 5. Liên kết minh chứng
-- [Link thiết kế Figma](https://www.figma.com/design/w9PWqTTjqXUzy1OzIdwXzL/B%25E1%25BA%25A3ng-%25C4%2591i%25E1%25BB%2581u-khi%25E1%25BB%2583n--gk-?node-id=0-1&p=f&t=GdrOtexgGK2ZfzC2-0) 
+- [Link thiết kế Figma](https://www.figma.com/design/w9PWqTTjqXUzy1OzIdwXzL/B%E1%BA%A3ng-%C4%91i%E1%BB%81u-khi%E1%BB%83n--gk-?node-id=0-1&t=GdrOtexgGK2ZfzC2-1) 
 - [Link Video trình bày sản phẩm trên YouTube](#) *(Thay dấu # bằng link video YouTube của bạn)*
 - [Link GitHub Repository](https://github.com/xdiiefu1411/Bang-dieu-khien)
 
