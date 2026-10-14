@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreatorStudio - Bảng điều khiển</title>
+    <link rel="stylesheet" href="gk.css" />
+  </head>
+  <body>
+    <header class="thanh-tieu-de">
+      <div class="khu-vuc-logo">
+        <span class="bieu-tuong-logo" aria-hidden="true">C</span>
+        <span class="ten-thuong-hieu">CreatorStudio</span>
+        <button class="nut-menu" id="nutMoMenu" aria-label="Mở menu điều hướng">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+          <span>Menu</span>
+        </button>
+      </div>
+      <section class="khu-vuc-nguoi-dung" aria-label="Thông tin người dùng">
+        <span class="nhan-vai-tro">Nhà thiết kế</span>
+        <span class="ten-nguoi-dung">Minh Quân</span>
+        <button class="nut-dang-xuat" type="button">Đăng xuất</button>
+      </section>
+    </header>
+
+    <div class="khung-bo-cuc">
+      <nav
+        class="thanh-dieu-huong"
+        id="thanhDieuHuong"
+        aria-label="Điều hướng chính"
+      >
+        <section class="nhom-menu">
+          <h2 class="tieu-de-nhom">NHÀ THIẾT KẾ</h2>
+          <a href="#" class="muc-menu hoat-dong" data-trang="bang-dieu-khien">
+            <span class="icon-menu" aria-hidden="true">🏠</span>
+            <span>Bảng điều khiển</span>
+          </a>
+          <a href="#" class="muc-menu" data-trang="moodboard">
+            <span class="icon-menu" aria-hidden="true">🎨</span>
+            <span>Moodboard</span>
+          </a>
+          <a href="#" class="muc-menu" data-trang="quan-ly-phien-ban">
+            <span class="icon-menu" aria-hidden="true">📁</span>
+            <span>Quản lý phiên bản</span>
+          </a>
+        </section>
+      </nav>
+
+      <main class="noi-dung-chinh">
+        <header class="phan-dau-trang">
+          <h1>Bảng điều khiển</h1>
+          <p>Việc cần làm, phiên bản đang chờ và góp ý mới từ khách hàng.</p>
+        </header>
+
+        <section class="luoi-thong-ke" aria-label="Thống kê tổng quan">
+          <article class="the-thong-ke">
+            <p class="so-lieu">1</p>
+            <h2 class="mo-ta-so-lieu">Dự án đang làm</h2>
+          </article>
+          <article class="the-thong-ke">
+            <p class="so-lieu">2</p>
+            <h2 class="mo-ta-so-lieu">Việc chưa xong</h2>
+          </article>
+          <article class="the-thong-ke">
+            <p class="so-lieu">0</p>
+            <h2 class="mo-ta-so-lieu">Phiên bản chờ khách duyệt</h2>
+          </article>
+          <article class="the-thong-ke">
+            <p class="so-lieu">0</p>
+            <h2 class="mo-ta-so-lieu">Cần xử lý gấp</h2>
+          </article>
+        </section>
+
+        <div class="luoi-noi-dung-chi-tiet">
+          <!-- Việc của tôi -->
+          <section class="khoi-noi-dung" aria-labelledby="tieu-de-cong-viec">
+            <header class="dau-khoi">
+              <h2 id="tieu-de-cong-viec">Việc của tôi</h2>
+              <form>
+                <select
+                  class="bo-loc-dropdown"
+                  name="bo-loc-cong-viec"
+                  aria-label="Lọc danh sách công việc"
+                >
+                  <option value="tat-ca">Tất cả</option>
+                  <option value="dang-lam">Đang làm</option>
+                  <option value="can-lam">Cần làm</option>
+                </select>
+              </form>
+            </header>
+
+            <div class="danh-sach-cong-viec">
+              <article class="muc-cong-viec">
+                <header class="thong-tin-cv">
+                  <h3>Sửa màu xanh sáng hơn ở v3</h3>
+                  <p>Nhận diện thương hiệu Hoa Sen • Hạn 14/10/2026</p>
+                </header>
+                <footer class="hanh-dong-cv">
+                  <span class="nhan-trang-thai dang-lam">Đang làm</span>
+                  <button class="nut-hanh-dong" type="button">
+                    Gửi review
+                  </button>
+                </footer>
+              </article>
+
+              <article class="muc-cong-viec">
+                <header class="thong-tin-cv">
+                  <h3>Thiết kế logo ngang cho biển hiệu</h3>
+                  <p>Nhận diện thương hiệu Hoa Sen • Hạn 17/10/2026</p>
+                </header>
+                <footer class="hanh-dong-cv">
+                  <span class="nhan-trang-thai can-lam">Cần làm</span>
+                  <button class="nut-hanh-dong chinh" type="button">
+                    Bắt đầu
+                  </button>
+                </footer>
+              </article>
+            </div>
+          </section>
+
+          <!-- Góp ý đang mở -->
+          <section class="khoi-noi-dung" aria-labelledby="tieu-de-gop-y">
+            <header class="dau-khoi">
+              <h2 id="tieu-de-gop-y">Góp ý đang mở</h2>
+            </header>
+
+            <div class="danh-sach-gop-y">
+              <article class="muc-gop-y">
+                <header class="tac-gia-gop-y">Lan Anh · v3</header>
+                <p class="noi-dung-gop-y">
+                  Màu xanh hơi tối, mong sáng hơn một chút.
+                </p>
+              </article>
+
+              <article class="muc-gop-y">
+                <header class="tac-gia-gop-y">Lan Anh · v3</header>
+                <p class="noi-dung-gop-y">
+                  Cần thêm phiên bản logo ngang cho biển hiệu.
+                </p>
+              </article>
+
+              <article class="muc-gop-y">
+                <header class="tac-gia-gop-y">
+                  Thu Hà · v3 <span class="nhan-noi-bo">Nội bộ</span>
+                </header>
+                <p class="noi-dung-gop-y">
+                  Nội bộ: khoảng cách chữ ở biến thể đen trắng chưa đều.
+                </p>
+              </article>
+            </div>
+
+            <footer class="chan-khoi-gop-y">
+              <button class="nut-phu" id="nutQuanLyPhienBan" type="button">
+                Đi tới quản lý phiên bản
+              </button>
+            </footer>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="gk.js"></script>
+  </body>
+</html>
