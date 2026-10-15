@@ -43,7 +43,7 @@ Trang **Quản lý người dùng** dành cho **Quản trị viên (Admin)** c�
 ## 🔗 CÁC LIÊN KẾT BÀI NỘP
 * **Link Figma:** (https://www.figma.com/design/w9PWqTTjqXUzy1OzIdwXzL/B%E1%BA%A3ng-%C4%91i%E1%BB%81u-khi%E1%BB%83n--gk-?node-id=0-1&t=Lg809pkMCAb5uA1h-1)
 * **Link GitHub Repository:** [Dán link repo GitHub của bạn vào đây]
-* **Link Video trình bày:** [Dán link Video (Youtube/Drive) của bạn vào đây]
+* **Link Video trình bày:** (https://youtu.be/aSJfUjbVyLY?si=z3oUIeL2lcEnf2vC)
 
 ---
 
